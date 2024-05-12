@@ -13,4 +13,12 @@
         android:layout_height="wrap_content"
         android:text="构造函数插桩场景调用"/>
 
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gameMonitor"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启游戏监听按钮"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>

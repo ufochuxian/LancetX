@@ -16,17 +16,21 @@ class MainActivity : AppCompatActivity() {
         init_method_insert_test.setOnClickListener {
             ConstructorTest(" original call^");
         }
+
+        gameMonitor.setOnClickListener {
+            GameMonitor().startMonitor("PartyGame", 1)
+        }
     }
 
     override fun onResume() {
         super.onResume()
         val thread = Thread()
         val intent = Intent()
-        Log.i("Activity","onResume")
+        Log.i("Activity", "onResume")
     }
 
-    fun normalMethod(){
-        Log.i("Activity","normalMethod")
+    fun normalMethod() {
+        Log.i("Activity", "normalMethod")
         val thread = Thread()
     }
 
